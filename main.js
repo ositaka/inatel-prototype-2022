@@ -72,65 +72,66 @@ function tabTipoViagemInactive() {
  * Pesquisa — Origem
  */
 
-const pesquisaOrigem = $('#nav__origem');
-const pesquisaDestino = $('#nav__destino');
-const pesquisaMes = $('#nav__mes');
-const pesquisaOrcamento = $('#nav__orcamento');
+if ($('.pesquisa')) {
+  const pesquisaOrigem = $('#nav__origem');
+  const pesquisaDestino = $('#nav__destino');
+  const pesquisaMes = $('#nav__mes');
+  const pesquisaOrcamento = $('#nav__orcamento');
 
-const selectaOrigem = $('#origem');
-const selectaDestino = $('#destino');
-const selectaMes = $('#mes');
-const selectaOrcamento = $('#orcamento');
+  const selectaOrigem = $('#origem');
+  const selectaDestino = $('#destino');
+  const selectaMes = $('#mes');
+  const selectaOrcamento = $('#orcamento');
 
-// EventListeners
-// Origem
-pesquisaOrigem.addEventListener('mouseenter', () => { selectaOrigemActive(); });
-pesquisaOrigem.addEventListener('mouseleave', () => { selectaOrigemInactive(); });
+  // EventListeners
+  // Origem
+  pesquisaOrigem.addEventListener('mouseenter', () => { selectaOrigemActive(); });
+  pesquisaOrigem.addEventListener('mouseleave', () => { selectaOrigemInactive(); });
 
-function selectaOrigemActive() {
-  selectaOrigem.classList.remove('active');
-  selectaOrigem.classList.add('active');
+  function selectaOrigemActive() {
+    selectaOrigem.classList.remove('active');
+    selectaOrigem.classList.add('active');
+  }
+  function selectaOrigemInactive() {
+    selectaOrigem.classList.remove('active');
+  }
+
+  // Destino
+  pesquisaDestino.addEventListener('mouseenter', () => { selectaDestinoActive(); });
+  pesquisaDestino.addEventListener('mouseleave', () => { selectaDestinoInactive(); });
+
+  function selectaDestinoActive() {
+    selectaDestino.classList.remove('active');
+    selectaDestino.classList.add('active');
+  }
+  function selectaDestinoInactive() {
+    selectaDestino.classList.remove('active');
+  }
+
+  // Mes
+  pesquisaMes.addEventListener('mouseenter', () => { selectaMesActive(); });
+  pesquisaMes.addEventListener('mouseleave', () => { selectaMesInactive(); });
+
+  function selectaMesActive() {
+    selectaMes.classList.remove('active');
+    selectaMes.classList.add('active');
+  }
+  function selectaMesInactive() {
+    selectaMes.classList.remove('active');
+  }
+
+  // Orcamento
+  pesquisaOrcamento.addEventListener('mouseenter', () => { selectaOrcamentoActive(); });
+  pesquisaOrcamento.addEventListener('mouseleave', () => { selectaOrcamentoInactive(); });
+
+  function selectaOrcamentoActive() {
+    selectaOrcamento.classList.remove('active');
+    selectaOrcamento.classList.add('active');
+  }
+  function selectaOrcamentoInactive() {
+    selectaOrcamento.classList.remove('active');
+  }
 }
-function selectaOrigemInactive() {
-  selectaOrigem.classList.remove('active');
-}
-
-// Destino
-pesquisaDestino.addEventListener('mouseenter', () => { selectaDestinoActive(); });
-pesquisaDestino.addEventListener('mouseleave', () => { selectaDestinoInactive(); });
-
-function selectaDestinoActive() {
-  selectaDestino.classList.remove('active');
-  selectaDestino.classList.add('active');
-}
-function selectaDestinoInactive() {
-  selectaDestino.classList.remove('active');
-}
-
-// Mes
-pesquisaMes.addEventListener('mouseenter', () => { selectaMesActive(); });
-pesquisaMes.addEventListener('mouseleave', () => { selectaMesInactive(); });
-
-function selectaMesActive() {
-  selectaMes.classList.remove('active');
-  selectaMes.classList.add('active');
-}
-function selectaMesInactive() {
-  selectaMes.classList.remove('active');
-}
-
-// Orcamento
-pesquisaOrcamento.addEventListener('mouseenter', () => { selectaOrcamentoActive(); });
-pesquisaOrcamento.addEventListener('mouseleave', () => { selectaOrcamentoInactive(); });
-
-function selectaOrcamentoActive() {
-  selectaOrcamento.classList.remove('active');
-  selectaOrcamento.classList.add('active');
-}
-function selectaOrcamentoInactive() {
-  selectaOrcamento.classList.remove('active');
-}
-
 
 /********************************************************************************* */
 /**
