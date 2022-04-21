@@ -207,6 +207,16 @@ body {
 }
 
 /**
+ Temas */
+.page__temas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 20px;
+  padding-left: 372px;
+  margin-top: 765px;
+}
+
+/**
  Viagem */
 .page__viagem {
   margin-top: 800px;
