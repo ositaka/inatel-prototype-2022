@@ -151,7 +151,7 @@ sessionStorage.setItem('alert', 'yes')
 
 
 document.addEventListener('keydown', function (event) {
-  if (event.key === 'a') {
+  if (event.key === 'a' || event.key === 'A') {
     links.forEach(link => {
       link.style.background = "rgba(255, 0, 125, 0.5)";
       link.style.border = "3px solid rgba(255, 0, 125, 1)";
@@ -160,7 +160,7 @@ document.addEventListener('keydown', function (event) {
 });
 
 document.addEventListener('keyup', function (event) {
-  if (event.key === 'a') {
+  if (event.key === 'a' || event.key === 'A') {
     links.forEach(link => {
       link.style.background = "none";
       link.style.border = "0";
