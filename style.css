@@ -1,0 +1,274 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+html {
+  background: rgba(0, 0, 0, 0.16);
+  min-width: 1280px;
+  scroll-behavior: smooth;
+  transition: opacity 0.3s ease-in;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  min-width: 1280px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.menu {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.menu__navigation {
+  display: block;
+  height: 80px;
+  margin: auto;
+  margin-bottom: -4px;
+  margin-top: -80px;
+  padding-left: 212px;
+  position: relative;
+  text-align: center;
+  width: 60%;
+  z-index: 2;
+}
+
+.menu__navigation__link {
+  cursor: pointer;
+  display: inline-block;
+  height: 80px;
+  margin-right: -5px;
+  text-indent: -9999px;
+  z-index: 3;
+}
+
+.menu__navigation__link:nth-child(1) {
+  width: 105px;
+}
+.menu__navigation__link:nth-child(2) {
+  width: 123px;
+}
+.menu__navigation__link:nth-child(3) {
+  width: 101px;
+}
+.menu__navigation__link:nth-child(4) {
+  width: 168px;
+}
+.menu__navigation__link:nth-child(5) {
+  width: 143px;
+  opacity: 0;
+}
+.menu__navigation__link:nth-child(6) {
+  width: 147px;
+}
+
+.menu__navigation__link a {
+  display: block;
+  height: 100%;
+}
+
+.menu__navigation__tab {
+  /* box-shadow: 0 500px 100px rgba(0, 0, 0, 0.4); */
+  display: none;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu__navigation__tab__bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 0.3s ease-in;
+  z-index: -1;
+}
+
+.menu__navigation__tab.active {
+  display: block;
+}
+
+#tab__destinos {
+  background: url(./img/menu__tab__destinos-europa.png) top center no-repeat;
+  height: 620px;
+}
+#tab__temas {
+  background: url(./img/menu__tab__temas.png) top center no-repeat;
+  height: 521px;
+}
+#tab__tipo-de-viagem {
+  background: url(./img/menu__tab__tipo-de-viagem.png) top center no-repeat;
+  height: 425px;
+}
+
+/*******************************
+ * Pages 
+ *******************************/
+
+.page {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 1096px;
+  z-index: 0;
+}
+
+/**
+ Inicio */
+.page__inicio {
+  margin-top: 560px;
+  width: 1920px;
+}
+
+.pesquisa {
+  height: 100px;
+}
+
+.pesquisa__nav {
+  display: flex;
+  height: 100px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 1096px;
+  z-index: 1;
+}
+
+.pesquisa__nav__item {
+  display: block;
+  height: 100px;
+  text-indent: -9999px;
+  width: 206px;
+}
+.pesquisa__nav__item#nav__pesquisar {
+  width: 274px;
+}
+
+.pesquisa__select {
+  display: none;
+  height: 550px;
+  position: absolute;
+  width: 100%;
+}
+
+.pesquisa__select.active {
+  display: block;
+}
+
+.pesquisa__select#origem {
+  background: url(./img/pesquisa__origem.png) top center no-repeat;
+}
+.pesquisa__select#destino {
+  background: url(./img/pesquisa__destino.png) top center no-repeat;
+}
+.pesquisa__select#mes {
+  background: url(./img/pesquisa__mes.png) top center no-repeat;
+}
+.pesquisa__select#orcamento {
+  background: url(./img/pesquisa__orcamento.png) top center no-repeat;
+  left: -1px;
+}
+
+/**
+ Destinos */
+.page__destinos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 22px 20px;
+  margin-top: 348px;
+  margin-left: 1px;
+}
+
+.btn__viagem {
+  display: block;
+  height: 456px;
+}
+
+/**
+ Viagem */
+.page__viagem {
+  margin-top: 800px;
+}
+
+.page__viagem__nav {
+  align-items: center;
+  display: flex;
+  height: 100px;
+}
+
+.page__viagem__nav__item {
+  display: block;
+  margin-right: 30px;
+}
+
+.page__viagem__nav__item:nth-child(1) {
+  width: 140px;
+}
+.page__viagem__nav__item:nth-child(2) {
+  width: 122px;
+}
+.page__viagem__nav__item:nth-child(3) {
+  width: 106px;
+}
+.page__viagem__nav__item:nth-child(4) {
+  width: 122px;
+}
+.page__viagem__nav__item:nth-child(5) {
+  opacity: 0;
+  width: 170px;
+}
+.page__viagem__nav__item:nth-child(6) {
+  width: 190px;
+  margin-left: 100px;
+  margin-right: -3px;
+}
+
+.page__viagem__nav__item a {
+  display: block;
+  height: 100px;
+}
+
+.page__viagem__section#itinerario {
+  height: 500px;
+  margin-top: 340px;
+}
+.page__viagem__section#itinerario a {
+  display: block;
+  height: 70px;
+  width: 170px;
+  position: absolute;
+  right: 0;
+  margin-top: 120px;
+}
+
+.page__viagem__section#precos {
+  height: 700px;
+}
+.page__viagem__section#mapa {
+  height: 600px;
+}
+.page__viagem__section#galeria {
+  height: 480px;
+}
