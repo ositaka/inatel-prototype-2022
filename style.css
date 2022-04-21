@@ -111,15 +111,15 @@ body {
 }
 
 #tab__destinos {
-  background: url(./img/menu__tab__destinos-europa.png) top center no-repeat;
+  background: url(/img/menu__tab__destinos-europa.png) top center no-repeat;
   height: 620px;
 }
 #tab__temas {
-  background: url(./img/menu__tab__temas.png) top center no-repeat;
+  background: url(/img/menu__tab__temas.png) top center no-repeat;
   height: 521px;
 }
 #tab__tipo-de-viagem {
-  background: url(./img/menu__tab__tipo-de-viagem.png) top center no-repeat;
+  background: url(/img/menu__tab__tipo-de-viagem.png) top center no-repeat;
   height: 425px;
 }
 
@@ -178,16 +178,16 @@ body {
 }
 
 .pesquisa__select#origem {
-  background: url(./img/pesquisa__origem.png) top center no-repeat;
+  background: url(/img/pesquisa__origem.png) top center no-repeat;
 }
 .pesquisa__select#destino {
-  background: url(./img/pesquisa__destino.png) top center no-repeat;
+  background: url(/img/pesquisa__destino.png) top center no-repeat;
 }
 .pesquisa__select#mes {
-  background: url(./img/pesquisa__mes.png) top center no-repeat;
+  background: url(/img/pesquisa__mes.png) top center no-repeat;
 }
 .pesquisa__select#orcamento {
-  background: url(./img/pesquisa__orcamento.png) top center no-repeat;
+  background: url(/img/pesquisa__orcamento.png) top center no-repeat;
   left: -1px;
 }
 
